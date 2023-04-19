@@ -32,12 +32,14 @@ else {
 function handleClickHeart(x, y) {
     for (let i = 0; i < 10; i++) {
         const objectImage = {
-            src: "images/lover-modified.png",
+            src: "images/lover-modified.webp",
             size: 0.6,
+            color: "#fff"
         };
         if (x > two.width / 2) {
-            objectImage.src = "images/me-modified.png";
+            objectImage.src = "images/me-modified.webp";
             objectImage.size = 0.18;
+            objectImage.color= "#fff"
         }
         const radius = Math.PI * 2 / 10;
         const circle = two.makeCircle(0, 0, 100);
